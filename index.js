@@ -4,7 +4,6 @@ import express from "express";
 import "express-async-errors";
 import { createServer } from "http";
 import cors from "cors";
-import helmet from "helmet";
 import { divisionList, getDistrict, getUazila, getUnion } from "./data/functions.js";
 
 
@@ -17,7 +16,6 @@ const corsConfig = {
 }
 app.use(cors(corsConfig))
 app.options("", cors(corsConfig))
-app.use(helmet());
 app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true }));
 
