@@ -1,8 +1,8 @@
 import { StatusCodes } from "http-status-codes";
-import divisions from "./divisions.json" assert { type: "json" };
-import districts from "./districts.json" assert { type: "json" };
-import upazilas from "./upazilas.json" assert { type: "json" };
-import unions from "./unions.json" assert { type: "json" };
+import divisions from "./divisions.js" 
+import districts from "./districts.js" 
+import upazilas from "./upazilas.js" 
+import unions from "./unions.js"
 
 const divisionList=async(req,res)=>{
     res.status(StatusCodes.OK).json({data:divisions});

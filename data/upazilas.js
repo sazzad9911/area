@@ -1,4 +1,4 @@
-[
+const upazilas=[
   {
     "id": "1",
     "district_id": "1",
@@ -3458,3 +3458,4 @@
     "url": "null"
   }
 ]
+export default upazilas

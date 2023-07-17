@@ -1,4 +1,4 @@
-[
+const division=[
   {
     "id": "1",
     "name": "Chattagram",
@@ -48,3 +48,4 @@
     "url": "www.mymensinghdiv.gov.bd"
   }
 ]
+export default division

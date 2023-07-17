@@ -1,4 +1,4 @@
-[
+const districts=[
   {
     "id": "1",
     "division_id": "1",
@@ -576,3 +576,4 @@
     "url": "www.netrokona.gov.bd"
   }
 ]
+export default districts

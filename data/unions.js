@@ -1,4 +1,4 @@
-[
+const unions=[
   {
     "id": "1",
     "upazilla_id": "1",
@@ -31780,3 +31780,4 @@
     "url": "kaliaragabragatiup.netrokona.gov.bd"
   }
 ]
+export default unions
