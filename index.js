@@ -10,12 +10,21 @@ import { divisionList, getDistrict, getUazila, getUnion } from "./data/functions
 
 dotenv.config();
 const app= express()
-app.use(cors({ origin: true, credentials: true }));
+const corsConfig = {
+  origin: '',
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE']
+}
+app.use(cors(corsConfig))
+app.options("", cors(corsConfig))
 app.use(helmet());
 app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true }));
 
 //routes
+app.get('/',(req,res)=>{
+  res.send("Area Routing")
+})
 app.get("/divisions",divisionList)
 app.post("/district",getDistrict)
 app.post("/upazila",getUazila)
